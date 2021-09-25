@@ -2,18 +2,34 @@ import java.util.Scanner;
 
 public class Test {
     public static void main (String[] args){
-        printArray();
+        MaxV();
+        System.out.println();
+        MinV();
     }
 
-    /**Выводит на печать созданный массив
+    /**Вычисляет максимальное значение из введённого массива
      *
      */
-    static void printArray()
-        {int[] arr1 = createArray();
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(" " + arr1[i]);
+    static void MaxV() {
+        int [] arr3 = createArray();
+        int max = arr3[0];
+        for(int i = 0; i<arr3.length; i++){
+            if(max<arr3[i])
+                max = arr3[i];
         }
+        System.out.println("Максимальное значение: "+max);
     }
+
+    static void MinV() {
+        int [] arr3 = createArray();
+        int min = arr3[0];
+        for(int i = 0; i<arr3.length; i++){
+            if(min>arr3[i])
+                min = arr3[i];
+        }
+        System.out.println("Минимальное знаение:"+min);
+    }
+
 
     /**
      * Создаёт массив введённого пользователем размера
