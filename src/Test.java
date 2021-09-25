@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Test {
     public static void main (String[] args){
-        MaxV();
+        maxValue();
         System.out.println();
-        MinV();
+        minValue();
     }
 
-    /**Вычисляет максимальное значение из введённого массива
+    /**Вычисляет максимальное значение из введённого пользователем массива
      *
      */
-    static void MaxV() {
+    static void maxValue() {
         int [] arr3 = createArray();
         int max = arr3[0];
         for(int i = 0; i<arr3.length; i++){
@@ -20,7 +20,10 @@ public class Test {
         System.out.println("Максимальное значение: "+max);
     }
 
-    static void MinV() {
+    /**Вычисляет минимальное значение из введённого пользователем массива
+     *
+     */
+    static void minValue() {
         int [] arr3 = createArray();
         int min = arr3[0];
         for(int i = 0; i<arr3.length; i++){
