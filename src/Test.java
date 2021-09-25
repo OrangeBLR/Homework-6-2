@@ -3,19 +3,31 @@ import java.util.Scanner;
 public class Test {
     public static void main (String[] args){
         maxValue();
-        System.out.println();
         minValue();
+        sumValue();
+    }
+
+    /**Вычисляет сумму значений из введённого пользователем массива
+     *
+     */
+    public static void sumValue() {
+        int arr1[] = createArray();
+        int sum = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            sum = sum + arr1[i];
+        }
+        System.out.println("Сумма значений массива: "+sum);
     }
 
     /**Вычисляет максимальное значение из введённого пользователем массива
      *
      */
     static void maxValue() {
-        int [] arr3 = createArray();
-        int max = arr3[0];
-        for(int i = 0; i<arr3.length; i++){
-            if(max<arr3[i])
-                max = arr3[i];
+        int [] arr2 = createArray();
+        int max = arr2[0];
+        for(int i = 0; i<arr2.length; i++){
+            if(max<arr2[i])
+                max = arr2[i];
         }
         System.out.println("Максимальное значение: "+max);
     }
