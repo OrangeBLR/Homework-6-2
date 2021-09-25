@@ -5,19 +5,8 @@ public class Test {
         maxValue();
         minValue();
         sumValue();
-        median();
     }
-    /**Вычисляет медианное значение из введённого пользователем массива
-     *
-     */
-    static int median(){
-        int arr1[] = createArray();
-        int sum = 0;
-        for(int i=0;i<x.length;i++){
-            sum += x[i];
-        }
-        return sum/x.length;
-    }
+   
     /**Вычисляет сумму значений из введённого пользователем массива
      *
      */
